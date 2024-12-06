@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@600&display=swap");
+.sec-five {
+  background-color: rgb(73, 71, 71);
+  padding-bottom: 4rem !important;
+}
+
+.dark-body .sec-five {
+  background-color: rgb(39, 36, 36);
+}
+
+.dark-body .accord {
+  background-color: rgb(53, 50, 50) !important;
+  color: white !important;
+}
+
+.accord {
+  background-color: rgb(127, 83, 83) !important;
+  width: 700px !important;
+  position: relative !important;
+  top: 3rem !important;
+}
+
+.ac-main {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  flex-direction: column !important;
+}
+
+.typo {
+  color: white !important;
+  font-family: "Poppins", sans-serif !important;
+}
+
+.arrow-ic {
+  color: white !important;
+  font-size: 2rem !important;
+}
+#freq {
+  color: white !important;
+  font-family: "Poppins", sans-serif !important;
+  font-size: 1.7rem !important;
+  position: relative !important;
+  top: 0.4rem !important;
+}
+/* responsive */
+
+@media only screen and (max-width: 768px) {
+  .accord {
+    width: 400px !important;
+  }
+  #freq {
+    color: white !important;
+    font-family: "Poppins", sans-serif !important;
+    font-size: 1.5rem !important;
+  }
+}
+
+@media only screen and (max-width: 525px) {
+  .accord {
+    width: 300px !important;
+  }
+  #freq {
+    font-size: 1.4rem !important;
+  }
+  .arrow-ic {
+    font-size: 1.7rem !important;
+  }
+  #tpara {
+    width: 260px !important;
+  }
+}
+
+@media only screen and (max-width: 322px) {
+  .accord {
+    width: 280px !important;
+  }
+  #freq {
+    font-size: 1.4rem !important;
+    text-align: center !important ;
+  }
+  .arrow-ic {
+    font-size: 1.7rem !important;
+  }
+  #tpara {
+    width: 260px !important;
+  }
+}
+
+@media only screen and (max-width: 282px) {
+  .accord {
+    width: 260px !important;
+  }
+  #freq {
+    font-size: 1.3rem !important;
+    text-align: center !important ;
+  }
+  #tpara {
+    width: 230px !important;
+    text-align: start !important;
+  }
+}

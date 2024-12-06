@@ -1,0 +1,61 @@
+.scroll-to-top-button {
+  position: fixed;
+  bottom: 100px;
+  right: 28px;
+  background-color: rgb(169, 99, 99);
+  color: #fff;
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 32px;
+  transform: rotate(-45deg);
+  z-index: 13;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  animation-name: topbtn;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes topbtn {
+  0% {
+    transform: translateY(10px) rotate(-45deg);
+  }
+  100% {
+    transform: translateY(30px) rotate(-45deg);
+  }
+}
+.scroll-to-top-button.visible {
+  opacity: 1;
+}
+.scroll-to-top-button:hover {
+  background-color: rgb(111, 109, 109);
+}
+
+@media only screen and (max-width: 1290px) {
+  .scroll-to-top-button {
+    right: 6rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .scroll-to-top-button {
+    right: 1rem;
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 416px) {
+  .scroll-to-top-button {
+    right: 0.7rem;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .scroll-to-top-button {
+    right: 0.5rem;
+    font-size: 20px;
+  }
+}

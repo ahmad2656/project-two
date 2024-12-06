@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@600&display=swap");
+.fo-sec {
+  position: relative;
+  background-image: url("../../public/fo.jpg");
+  background-size: cover;
+  background-position: 35% 55%;
+  background-repeat: no-repeat;
+  height: 500px;
+  padding-top: 4rem;
+}
+
+.fo-sec::before {
+  content: "";
+  position: absolute;
+  background-color: rgb(65, 62, 62, 0.7);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.dark-body .fo-sec::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(42, 33, 33, 0.8);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.fot-grid {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+  color: white;
+  font-family: "Poppins", sans-serif !important;
+}
+
+.fo-para {
+  width: 350px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.fo-links {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  position: relative;
+  left: 1rem;
+  font-weight: 700;
+  line-height: 30px;
+  font-size: 18px;
+  width: max-content;
+}
+
+.fo-links:hover,
+.address:hover {
+  transform: translateX(10px);
+  transition: 1s all;
+  cursor: pointer;
+}
+#follow {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 600 !important;
+  width: max-content;
+}
+
+.fo-icons {
+  font-size: 2rem;
+  position: relative;
+  top: 1rem;
+  right: 1.5rem;
+  margin-left: 0.6rem;
+}
+
+.arrows-ico {
+  position: relative;
+  right: 1rem;
+}
+
+.main-fo {
+  height: 40px;
+  width: max-content;
+}
+
+.address {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 700 !important;
+  height: 30px;
+  font-size: 18px;
+  width: max-content;
+}
+
+.last-foot {
+  background-color: rgb(28, 24, 24);
+  height: 50px;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+#copy {
+  position: relative;
+  margin-top: 14px;
+  height: max-content;
+  color: white;
+  width: max-content;
+  left: 4rem;
+}
+#privacy {
+  position: relative;
+  margin-top: 14px;
+  height: max-content;
+  color: white;
+  width: max-content;
+  right: 6rem;
+}
+
+@media only screen and (max-width: 1290px) {
+  .fot-grid {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .fo-sec {
+    height: 1120px;
+    padding-top: 4rem;
+  }
+  #useful {
+    margin-top: 4rem;
+  }
+
+  #contact {
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 525px) {
+  .last-foot {
+    height: 70px;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #privacy {
+    position: relative;
+    bottom: 11px;
+    height: max-content;
+    color: white;
+    width: max-content;
+    left: 8.7rem;
+  }
+  #copy {
+    position: relative;
+    bottom: 0px;
+    height: max-content;
+    color: white;
+    width: max-content;
+    left: 7.5rem;
+  }
+
+  @media only screen and (max-width: 425px) {
+    #privacy {
+      position: relative;
+      bottom: 11px;
+      height: max-content;
+      color: white;
+      width: max-content;
+      left: 7.2rem;
+    }
+    #copy {
+      position: relative;
+      bottom: 0px;
+      height: max-content;
+      color: white;
+      width: max-content;
+      left: 6rem;
+    }
+  }
+  .fo-sec {
+    height: 1140px;
+  }
+  .fo-para {
+    width: 330px;
+  }
+}
+
+@media only screen and (max-width: 325px) {
+  .fo-para {
+    width: 300px;
+  }
+  #privacy {
+    left: 5rem;
+  }
+  #copy {
+    left: 3.7rem;
+  }
+}
+
+@media only screen and (max-width: 282px) {
+  .fo-para {
+    width: 230px;
+  }
+  .fo-sec {
+    height: 1162px;
+  }
+  #privacy {
+    left: 4rem;
+  }
+  #copy {
+    left: 2.7rem;
+  }
+}

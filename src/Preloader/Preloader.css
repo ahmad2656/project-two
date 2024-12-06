@@ -1,0 +1,33 @@
+/* styles.css */
+
+.preloader {
+  background-color: rgb(37, 35, 35);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#prelog {
+  height: 300px;
+  width: 300px;
+  animation-name: rotate;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* res */
+@media only screen and (max-width: 576px) {
+  #prelog {
+    height: 200px;
+    width: 200px;
+  }
+}

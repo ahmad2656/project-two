@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@600&display=swap");
+.cli-sec {
+  position: relative;
+  background-image: url("../../public/lpp.avif");
+  background-size: cover;
+  background-position: 35% 55%;
+  background-repeat: no-repeat;
+  height: 550px;
+  margin-top: -8.5rem;
+}
+
+.cli-sec::before {
+  content: "";
+  position: absolute;
+  background-color: rgb(54, 51, 51, 0.9);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.dark-body .cli-sec::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(31, 27, 27, 0.9);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.cl-grid {
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  font-family: "Poppins", sans-serif !important;
+}
+
+.cl-icons {
+  font-size: 5rem;
+  margin-top: 11rem;
+  position: relative;
+  bottom: 10px;
+  margin-left: 3.5rem;
+}
+.cl-count {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.cl-cat {
+  position: relative;
+  left: 1rem;
+}
+.cl-para {
+  font-size: 14px;
+  position: relative;
+  left: 7px;
+}
+
+#happy {
+  position: relative;
+  left: 1.5rem;
+}
+
+/* media screen */
+
+@media only screen and (max-width: 768px) {
+  .cl-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cli-sec {
+    height: 1100px;
+    margin-top: -8.5rem;
+    background-position: 100% 55%;
+  }
+}

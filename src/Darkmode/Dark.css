@@ -1,0 +1,33 @@
+.dark-light-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dark-light-toggle button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  right: 2rem;
+}
+.moons {
+  font-size: 1.8rem !important;
+}
+
+.dark-body {
+  background-color: rgb(45, 41, 41);
+  color: #fff;
+}
+@media only screen and (max-width: 1200px) {
+  .dark-light-toggle button {
+    position: relative;
+    right: 10px;
+  }
+}
+
+@media only screen and (max-width: 436px) {
+  .moons {
+    font-size: 1.4rem !important;
+  }
+}

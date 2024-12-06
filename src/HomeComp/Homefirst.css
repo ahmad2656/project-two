@@ -1,0 +1,410 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@600&display=swap");
+
+.first-cont {
+  background-color: rgb(73, 71, 71);
+  z-index: -3;
+  position: relative;
+  bottom: 7rem;
+  padding-bottom: 4rem;
+}
+
+.dark-body .first-cont {
+  background-color: rgb(39, 36, 36);
+}
+
+.f-grid {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+  top: 1.3rem;
+}
+
+#web {
+  width: 700px;
+  height: 700px;
+  position: relative;
+  top: 5rem;
+  animation-name: coding;
+  animation-duration: 8s;
+  animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  animation-iteration-count: infinite;
+}
+
+@keyframes coding {
+  0% {
+    transform: translateY(20px);
+  }
+
+  50% {
+    transform: translateY(40px);
+  }
+}
+
+.f1 {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: relative;
+  top: 3rem;
+  left: 3rem;
+  color: white;
+}
+
+#tech {
+  font-size: 3.6rem;
+  font-weight: 700 !important;
+  position: relative;
+  top: 13px;
+  color: #0cdd94;
+  font-family: "Poppins", sans-serif !important;
+}
+#soft-text {
+  font-size: 1.7rem;
+  font-weight: 300 !important;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+#del-text {
+  font-size: 2rem;
+  width: 580px;
+  font-weight: 200 !important;
+  position: relative;
+  top: 12px;
+}
+
+.lor-text {
+  width: 560px;
+  position: relative;
+  font-size: 18px;
+  top: 22px;
+  font-weight: 600;
+  color: rgb(203, 226, 157);
+}
+
+#get-btn {
+  background-color: #0d845a;
+  color: rgb(0, 255, 255);
+  border: none;
+  cursor: pointer;
+  padding: 11px 40px;
+  position: relative;
+  top: 1.8rem;
+  font-size: 1rem;
+  border-radius: 30px;
+  font-weight: 600 !important;
+  font-family: "Poppins", sans-serif !important;
+  width: 180px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .f-grid {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 9rem;
+  }
+  .f1 {
+    display: grid;
+    top: 10rem;
+    left: 15rem;
+    width: max-content;
+  }
+  #web {
+    position: relative;
+    top: 12rem;
+    left: 8rem;
+  }
+}
+
+@media only screen and (max-width: 854px) {
+  .f1 {
+    display: grid;
+    top: 12rem;
+    left: 8rem;
+    width: max-content;
+  }
+  #web {
+    position: relative;
+    top: 13rem;
+    left: 5rem;
+    height: 600px;
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 822px) {
+  .f1 {
+    display: grid;
+    top: 12rem;
+    left: 8rem;
+    width: max-content;
+  }
+  #web {
+    position: relative;
+    top: 13rem;
+    left: 5rem;
+    height: 600px;
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .f1 {
+    display: grid;
+    top: 12rem;
+    left: 9rem;
+    width: max-content;
+  }
+  #tech {
+    font-size: 3rem;
+    top: 13px;
+  }
+  #soft-text {
+    font-size: 1.4rem;
+  }
+
+  #del-text {
+    font-size: 1.6rem;
+    width: 500px;
+    position: relative;
+    top: 12px;
+  }
+
+  .lor-text {
+    width: 450px;
+    position: relative;
+    font-size: 18px;
+    top: 16px;
+  }
+
+  #get-btn {
+    position: relative;
+    top: 1.5rem;
+    font-size: 1rem;
+    width: 160px;
+    padding: 9px 30px;
+  }
+  #web {
+    position: relative;
+    top: 13rem;
+    left: 4rem;
+    height: 600px;
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 545px) {
+  .f-grid {
+    padding-bottom: 22rem;
+  }
+  .f1 {
+    display: grid;
+    top: 14rem;
+    left: 6rem;
+    width: max-content;
+  }
+  #tech {
+    font-size: 2.7rem;
+    top: 13px;
+  }
+  #soft-text {
+    font-size: 1.4rem;
+  }
+
+  #del-text {
+    font-size: 1.1rem;
+    width: 300px;
+    position: relative;
+    top: 19px;
+  }
+
+  .lor-text {
+    width: 350px;
+    position: relative;
+    font-size: 14px;
+    top: 25px;
+  }
+
+  #get-btn {
+    position: relative;
+    top: 1.7rem;
+    font-size: 15px;
+    width: 150px;
+    padding: 6px 30px;
+  }
+  #web {
+    position: relative;
+    top: 19rem;
+    left: 3rem;
+    height: 410px;
+    width: 410px;
+  }
+}
+
+@media only screen and (max-width: 525px) {
+  .f-grid {
+    padding-bottom: 22rem;
+  }
+  .f1 {
+    display: grid;
+    top: 14rem;
+    left: 2.5rem;
+    width: max-content;
+  }
+  #tech {
+    font-size: 2.7rem;
+    top: 13px;
+  }
+  #soft-text {
+    font-size: 1.4rem;
+  }
+
+  #del-text {
+    font-size: 1.1rem;
+    width: 300px;
+    position: relative;
+    top: 19px;
+  }
+
+  .lor-text {
+    width: 350px;
+    position: relative;
+    font-size: 14px;
+    top: 25px;
+  }
+
+  #get-btn {
+    position: relative;
+    top: 1.7rem;
+    font-size: 15px;
+    width: 150px;
+    padding: 6px 30px;
+  }
+  #web {
+    position: relative;
+    top: 19rem;
+    left: -0.6rem;
+    height: 410px;
+    width: 410px;
+  }
+}
+
+@media only screen and (max-width: 395px) {
+  .f1 {
+    display: grid;
+    top: 14rem;
+    left: 1.5rem;
+    width: max-content;
+  }
+  #web {
+    position: relative;
+    top: 19rem;
+    left: 0rem;
+    height: 340px;
+    width: 340px;
+  }
+
+  .lor-text {
+    width: 273px;
+    position: relative;
+    font-size: 14px;
+    top: 25px;
+  }
+}
+
+@media only screen and (max-width: 325px) {
+  .f1 {
+    display: grid;
+    top: 14rem;
+    left: 2rem;
+    width: max-content;
+  }
+  #web {
+    position: relative;
+    top: 19rem;
+    left: 0rem;
+    height: 290px;
+    width: 290px;
+  }
+
+  .lor-text {
+    width: 250px;
+    position: relative;
+    font-size: 13px;
+    top: 25px;
+  }
+
+  #soft-text {
+    font-size: 1.2rem;
+  }
+
+  #del-text {
+    font-size: 1.1rem;
+    width: 250px;
+    position: relative;
+    top: 19px;
+  }
+
+  #tech {
+    font-size: 2.5rem;
+    top: 13px;
+  }
+
+  #get-btn {
+    position: relative;
+    top: 1.7rem;
+    font-size: 13px;
+    width: 120px;
+    padding: 5px 20px;
+  }
+}
+
+@media only screen and (max-width: 285px) {
+  .f1 {
+    display: grid;
+    top: 14rem;
+    left: 1.5rem;
+    width: max-content;
+  }
+  #web {
+    position: relative;
+    top: 19rem;
+    left: 0rem;
+    height: 280px;
+    width: 280px;
+  }
+
+  .lor-text {
+    width: 200px;
+    position: relative;
+    font-size: 13px;
+    top: 25px;
+  }
+
+  #soft-text {
+    font-size: 1.2rem;
+  }
+
+  #del-text {
+    font-size: 1.1rem;
+    width: 250px;
+    position: relative;
+    top: 19px;
+  }
+
+  #tech {
+    font-size: 2.5rem;
+    top: 13px;
+  }
+
+  #get-btn {
+    position: relative;
+    top: 1.7rem;
+    font-size: 13px;
+    width: 120px;
+    padding: 5px 20px;
+  }
+}

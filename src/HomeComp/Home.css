@@ -1,0 +1,19 @@
+.d-sec {
+  background-color: rgb(73, 71, 71);
+}
+
+.dark-body .d-sec {
+  background-color: rgb(39, 36, 36);
+}
+
+.dark-body .ext-fo-sec {
+  background-color: rgb(39, 36, 36, 0.8) !important;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.ext-fo-sec {
+  background-color: rgb(73, 71, 71) !important;
+  position: relative;
+  padding-bottom: 1rem;
+}
